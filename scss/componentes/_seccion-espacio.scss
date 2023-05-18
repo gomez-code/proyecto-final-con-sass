@@ -1,0 +1,38 @@
+
+.seccion-espacio{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    #patio{
+        background-color: nth($list: $colores, $n: 5);
+        flex-basis: 50%;
+        padding: 10px;
+        box-sizing: border-box;
+        img{
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    }
+}  
+.seccion-espacio{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    #aula{
+        background-color: nth($list: $colores, $n: 6);
+        flex-basis: 50%;
+        padding: 10px;
+        box-sizing: border-box;
+        img{
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    }
+}  
+@media screen and (max-width: 992px) {
+    .seccion-espacio{
+        flex-direction: column;
+    }
+}

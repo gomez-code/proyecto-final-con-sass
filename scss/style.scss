@@ -1,20 +1,42 @@
+*{  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+@import "./base/_listas";
 body{
     background-image: url(../fotos/shutterstock_2236646405.jpg);
     background-size: cover; 
 }
-nav{
-    background-color: aqua;
-    border: 1px solid black;
-    height: fit-content;
-    text-align: center;
-    ul{
-        list-style-type: none;
-        text-align: center;
-        margin-bottom: 0;
-       li{
-          text-decoration: none;
-          font-size: 20px;
-          width: 100px;
-       }
+#contenedor-banner{
+                   width: fit-content;
+                   margin-top: 10px;
+    #banner-pio{
+                 width: fit-content;
+                 padding: 0 20px 0 20px;
     }
+}
+@import "./componentes/seccion-espacio";
+@import "./componentes/seccion-cuentos";
+
+p{
+    font-size: 20px;
+}
+.piso{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    background-image: url(../fotos/ilustracion\ camilaarte.png);
+    background-repeat: repeat;
+    background-size:contain;
+}
+
+.piso1{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    background-image: url(../fotos/azulejos.png);
+    background-repeat: repeat;
+    background-size:contain;
 }

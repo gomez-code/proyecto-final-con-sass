@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="../fotos/logo.jpeg" type="image/x-icon">
-         <!--link con bootstrap-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-        <!--link con css-->
-        <link rel="stylesheet" href="../css/style-pf.css">
+    <link rel="shortcut icon" href="../fotos/logo.jpeg" type="image/x-icon">
+    <!--link con bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!--link con css-->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <title>PIO COLLIVADINO</title>
+    
+    <title>PIO COLLIVADINO Jardín de infantes/Instituto vocacional de arte/IVA</title>
 </head>
 <body>
     <header class="container-fluid text-center" style="background-image: url(../fotos/shutterstock_2280956821.jpg); background-size: cover; background-position: center";>
@@ -18,26 +21,72 @@
             <div class="col-lg-4 col-sm-6 p-2 pt-3">
                 <a href="../index.html"><img id="logo" src="../fotos/logo1.jpeg" class="rounded-circle img-fluid" alt="logo jardin iva instituto de educación por el arte" style="width: 220px; height: 220px;"></a>
             </div>       
-            <div class="col-lg-4 col-sm-10 bg-light bg-opacity-50 rounded-4 p-2 text-lg-end" style="position: relative;">
-                <h1><strong>JARDÍN PÍO</strong></h1>
-                <H2 class="titulo">Instituto Vocacional de Arte <br/>"Manuel José de Labardén"</H2>
+            <div class="col-lg-4 col-sm-10 bg-light bg-opacity-50 rounded-4 p-2 text-lg-end" style="position: relative;" id="contenedor-banner">
+                <div id="banner-pio">
+                    <h1><strong>JARDÍN PÍO COLLIVADINO</strong></h1>
+                    <H2 class="titulo">Instituto Vocacional de Arte <br/>"Manuel José de Labardén"</H2>
+                </div>
             </div>
         </div>
     </header>
-    <nav class="conteiner-fluid text-center sticky-top p-2" style="background-color: rgb(227, 224, 224); border: 2px solid lightblue;"><!--menu de navegación-->
-        <ul class="row justify-content-md-center align-items-center">
-            <li class="row gx-1 col-lg-2"><a href="../index.html">INICIO</a</li>
-            <li class="row gx-1 col-lg-2"><a href="./historia.html">HISTORIA</a></li>
-            <li class="row gx-1 col-lg-2"><a href="./talleres.html">TALLERES</a></li>
-            <li class="row gx-1 col-lg-2"><a href="./multimedia.html">MULTIMEDIA</a></li>
-        </ul>
-    </nav>
+        <!--(NAV con bootstrap)class="conteiner-fluid text-center sticky-top p-2" style="background-color: rgb(227, 224, 224); border: 2px solid lightblue;"-->
+        <nav class="navbar sticky-top navbar-expand-lg" style="background-color: #e3faf4d8;">
+            <div class="container-fluid">
+              <!--<a class="navbar-brand" href="#">MENU</a>-->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto" style="font-size: 20px; height: fit-content; align-items: center;">
+                  <li class="nav-item px-lg-4">
+                    <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                  </li>
+                  <li class="nav-item  active pe-lg-4">
+                    <a class="nav-link" href="./espacio.html">ESPACIOS</a>
+                  </li>
+                  <li class="nav-item pe-lg-4">
+                    <a class="nav-link" href="./historia.html">HISTORIA</a>
+                  </li>
+                  <li class="nav-item pe-lg-4">
+                    <a class="nav-link" href="./multimedia.html">MULTIMEDIA</a>
+                  </li>
+                  <li class="nav-item pe-lg-4">
+                    <a class="nav-link" href="./talleres.html">CUENTOS</a>
+                  </li>   
+                </ul>
+                <!--<form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>-->
+              </div>
+            </div>
+          </nav>    
+    <div class="piso1"> <!--imagen que divide el nav del main-->
+    </div>
     <main>
-        <section class="contenido"> 
+        <section class="seccion-espacio">
+            <div id="patio" class="animate__animate__fadeInLeft__delay-0.5s">
+                <img src="../fotos/patio-iva.jpeg" alt="niños educados con respeto desde el amor y el arte">
+                <p>
+                    En el jardín, la enseñanza toma cuerpo en situaciones concretas, en las cuales su multiplicidad de aspectos se hacen acto. Hay un concepto que en lo cotidiano articula y contiene la concreción de estas prácticas, el taller. El cual toma un sentido diferente al usualmente utilizado en el ámbito educativo y se usa para definir la concreción de todas las prácticas de la enseñanza que se realizan. En nuestro Jardín los espacios aúlicos son talleres. Derivado de la propuesta de atelier de artista plástico. Proveniente del obrador, obraje. En la actualidad, esta versión remite al espacio donde realizan su obra los pintores, ceramistas, escultores, etc. 
+Pero en el Jardín rescatamos la idea primitiva del taller como un lugar de aprendizaje compartido, donde a través del contacto directo con la materia, o mediante el aprendizaje en el uso de las herramientas, era posible la vivencia del proceso completo en la elaboración de un producto, sin una división tajante entre lo manual y lo intelectual como actividades diferenciales y diferenciadoras de los sujetos sociales. Al concebir el pensar como un hacer y al hacer siempre siendo portador de ideas que se ponen en acto, estamos pensando al taller como un espacio en el cual sujetos integrales despliegan acción, pensamiento y emoción entretejiéndolos y potenciándolos, avanzando en la ardua tarea de comprender y transformar lo real.
+Así, el taller en esta propuesta puede ser analizado desde distintas dimensiones: <bd/>
+-	como ámbito: espacio temporal adecuado<br/>
+-	como clase: taller de 3, 4 ó 5 años designan al grupo y a sus docentes<br/>
+-	como una modalidad operativa: Ronda de entrada (se planifica, se plantean hipótesis, divergencias, ideas, fantasías, expectativas),  Desarrollo (momento de la puesta en práctica), Ronda de salida (es la situación donde el grupo analiza y revisa lo realizado)
+                </p>
+            </div>
+            <div id="aula" class="animate__animated animate__fadeInRight__delay-0.5s">
+                <img src="../fotos/aulas-pio.jpeg" alt="iva pio collivadino enseñanza artistica, niños artistas, espacio de creatividad">
+                <p>
+                    El taller es el terreno en el cual se despliega la tarea, como ámbito de hacer-pensar, donde el trabajo grupal permite complejizar y enriquecer el proceso. El carácter plenamente social de la enseñanza pone de manifiesto la riqueza del trabajo grupal como ese espacio en el cual, a partir de las interacciones que se producen entre pares, se posibilita la construcción del conocimiento por parte del niño. El intercambio de intereses, experiencias e iniciativas, el expresar sus hipótesis y confrontarlas con el resto del grupo, el buscar respuestas, el compartir los logros tanto como las dificultades y los hallazgos, el integrarse a partir de un juego o de una tarea emprendida generan condiciones para dicha construcción. 
+La consideración del grupo de aprendizaje como tal modifica sustancialmente las características de la situación educativa y trasciende el hecho de que se realicen trabajos "en" grupo. Desde lo operativo el desarrollo de la grupalidad se favorece en tanto se creen los dispositivos grupales adecuados. Es menester puntualizar que la mera situación grupal no garantiza la fertilidad del proceso, para lograr encauzarla es necesaria una intervención adecuada. Por lo tanto, el taller funciona como continente del despliegue de fenómenos que además de un aspecto explícito, poseen una trama implícita dado el carácter grupal de las situaciones. Por ende, el docente a la vez que facilita la tarea, desde lo explícito, también lo hace desde el plano implícito en tanto promueve la elaboración de aquello que se manifiesta sólo veladamente. Así, el conflicto es motor, portador de significados y posibilidad en tanto el desafío que se genera para su superación. Esto es posible en tanto se sostiene en una base ética de respeto por la dignidad humana, la cooperación, la solidaridad, la no discriminación y el pluralismo. La constante confrontación crítica de las prácticas y sus supuestos con estos valores aporta los elementos que orientan las decisiones cotidianas.
+                </p>
+            </div>
         </section>
-        <div class="piso">
-        </div>
     </main>
+    <div class="piso">
+    </div>
     <footer class="container-fluid text-center">
         <div class="row row-cols-lg-3 row-cols-sm-1 justify-content-around align-items-center pt-2" style="background-color: rgb(235, 129, 94);">
             <div class="col-lg-4">

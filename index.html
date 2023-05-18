@@ -9,6 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <!--link con css-->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     
     <title>PIO COLLIVADINO Jardín de infantes/Instituto vocacional de arte/IVA</title>
 </head>
@@ -18,45 +21,82 @@
             <div class="col-lg-4 col-sm-6 p-2 pt-3">
                 <img id="logo" src="./fotos/logo1.jpeg" class="rounded-circle img-fluid" alt="logo jardin iva instituto de educación por el arte" style="width: 220px; height: 220px;">
             </div>       
-            <div class="col-lg-4 col-sm-10 bg-light bg-opacity-50 rounded-4 p-2 text-lg-end" style="position: relative;">
-                <h1><strong>JARDÍN PÍO</strong></h1>
-                <H2 class="titulo">Instituto Vocacional de Arte <br/>"Manuel José de Labardén"</H2>
+            <div class="col-lg-4 col-sm-10 bg-light bg-opacity-50 rounded-4 p-2 text-lg-end" style="position: relative;" id="contenedor-banner">
+                <div id="banner-pio">
+                    <h1><strong>JARDÍN PÍO COLLIVADINO</strong></h1>
+                    <H2 class="titulo">Instituto Vocacional de Arte <br/>"Manuel José de Labardén"</H2>
+                </div>
             </div>
         </div>
     </header>
         <!--(NAV con bootstrap)class="conteiner-fluid text-center sticky-top p-2" style="background-color: rgb(227, 224, 224); border: 2px solid lightblue;"-->
-    <nav>
-        <ul class="row justify-content-md-center align-items-center" id="navegador">
-            <li class="row gx-1 col-lg-2"><a href="./index.html">INICIO</a</li>
-            <li class="row gx-1 col-lg-2"><a href="./paginas/espacio.html">ESPACIOS</a</li>
-            <li class="row gx-1 col-lg-2"><a href="./paginas/historia.html">HISTORIA</a></li>
-            <li class="row gx-1 col-lg-2"><a href="./paginas/talleres.html">TALLERES</a></li>
-            <li class="row gx-1 col-lg-2"><a href="./paginas/multimedia.html">MULTIMEDIA</a></li>
-        </ul>
-    </nav>
+        <nav class="navbar sticky-top navbar-expand-lg" style="background-color: #e3faf4d8;">
+            <div class="container-fluid">
+              <!--<a class="navbar-brand" href="#">MENU</a>-->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto" style="font-size: 20px; height: fit-content; align-items: center;">
+                  <li class="nav-item px-lg-4">
+                    <a class="nav-link active" aria-current="page" href="./index.html">INICIO</a>
+                  </li>
+                  <li class="nav-item pe-lg-4">
+                    <a class="nav-link" href="./paginas/espacio.html">ESPACIOS</a>
+                  </li>
+                  <li class="nav-item pe-lg-4">
+                    <a class="nav-link" href="./paginas/historia.html">HISTORIA</a>
+                  </li>
+                  <li class="nav-item pe-lg-4">
+                    <a class="nav-link" href="./paginas/multimedia.html">MULTIMEDIA</a>
+                  </li>
+                  <li class="nav-item pe-lg-4">
+                    <a class="nav-link" href="./paginas/talleres.html">CUENTOS</a>
+                  </li>   
+                </ul>
+                <!--<form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>-->
+              </div>
+            </div>
+          </nav>    
+    <div class="piso1"> <!--imagen que divide el nav del main-->
+    </div>
     <main class="conteiner-fluid text-center justify-content-around p-4">
         <section>
-            <div class="row justify-content-around text-light" style="background-color: #3C7D58; width: fit-content;">
-                <article class="col-lg-10 col-10 p-3 pb-4" style="height: fit-content;">
-                    <h2><strong>EL IVA ES:</strong></h2>
-                    <P>El Instituto depende de la Dirección General de Enseñanza Artística, del Ministerio de Cultura del Gobierno de la Ciudad de Buenos Aires, por lo tanto es una institución pública de gestión estatal. 
-                    <br/>Reconoce su antecedente en el Teatro Municipal Infantil, fundado en el año 1913, organizado en el año 1928 como Instituto de Teatro Infantil Manuel José de Labardén. Desde entonces, ha transitado modificaciones que ampliaron  y reformularon su propuesta pedagógica.
-                    </P>
-                </article>
+            <div class="animate__animated animate__bounceInLeft animate__delay-0.5s">
+                <div class="row justify-content-around text-light rounded" style="background-color: #3C7D58; width: fit-content;" id="el-iva-es">
+                    <article class="col-lg-10 col-10 p-3 pb-4" style="height: fit-content;">
+                        <h2><strong>EL IVA ES:</strong></h2>
+                        <P>El Instituto depende de la Dirección General de Enseñanza Artística, del Ministerio de Cultura del Gobierno de la Ciudad de Buenos Aires, por lo tanto es una institución pública de gestión estatal. 
+                        <br/>Reconoce su antecedente en el Teatro Municipal Infantil, fundado en el año 1913, organizado en el año 1928 como Instituto de Teatro Infantil Manuel José de Labardén. Desde entonces, ha transitado modificaciones que ampliaron  y reformularon su propuesta pedagógica.
+                        </P>
+                    </article>
+                </div>
             </div><br/>
-            <div class="row justify-content-around text-light" style="background-color: #0F6381; width: fit-content;">
-                <article class="col-lg-10 col-10 p-3" style="height: fit-content;">
-                    <h2><strong>FILOSOFIA</strong></h2>
-                    <P>La Educación por el Arte, es el encuadre teórico que fundamenta su hacer, proponiendo  un proceso de aprendizaje grupal a través de la modalidad de taller. El recorrido está planteado desde la exploración y el acceso al conocimiento de diversos lenguajes artísticos y sus técnicas. Acompañamos los procesos de lxs alumnxs desde la construcción colectiva, en el hacer, sentir, pensar y expresar, estimulando así  el desarrollo  de una mirada sensible y transformadora de sí mismxs, de su grupo y del contexto de su tiempo.
-                    </P>
-                </article>
+            <div class="animate__animated animate__bounceInRight animate__delay-0.5s">
+                <div class="row justify-content-around text-light rounded" style="background-color: #0F6381; width: fit-content;" id="filosofia">
+                    <article class="col-lg-10 col-10 p-3" style="height: fit-content;">
+                        <h2><strong>FILOSOFÍA PEDAGÓGICA</strong></h2>
+                        <P>La Educación por el Arte, es el encuadre teórico que fundamenta su hacer, proponiendo  un proceso de aprendizaje grupal a través de la modalidad de taller. El recorrido está planteado desde la exploración y el acceso al conocimiento de diversos lenguajes artísticos y sus técnicas. Acompañamos los procesos de lxs alumnxs desde la construcción colectiva, en el hacer, sentir, pensar y expresar, estimulando así  el desarrollo  de una mirada sensible y transformadora de sí mismxs, de su grupo y del contexto de su Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque odio ex ea quaerat non? Odit quaerat eaque quisquam dolor, iste ab nisi magnam corrupti, fugiat maiores harum facere dicta facilis.
+                        </P>
+                    </article>
+                </div>
             </div><br/>
-            <div class="row justify-content-around text-light" style="background-color: #A25386; width: fit-content;">
-                <article class="col-lg-10 col-10 p-3" style="height: fit-content;">
-                    <h2><strong>OBJETIVO</strong></h2>
-                    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur molestias voluptas enim exercitationem blanditiis. Eaque consectetur deserunt officiis quisquam accusamus, consequatur culpa explicabo obcaecati error aspernatur eligendi pariatur optio eius!
-                    </P>
-                </article>
+            <div class="animate__animated animate__slideInUp animate__delay-1s">
+                <div class="row justify-content-around text-light rounded" style="background-color: #A25386; width: fit-content;" id="lenguaje">
+                    <article class="col-lg-10 col-10 p-3" style="height: fit-content;">
+                        <h2><strong>LENGUAJES ARTÍSTICOS Y JUEGO</strong></h2>
+                        <P>
+                            Las propuestas institucionales buscan amplificar los límites del universo simbólico y encontramos en los distintos lenguajes, a través de los cuales se manifiestan las artes en sus distintos modos de representación, herramientas dúctiles y especialmente propicias para esta edad. Es este un campo de conocimientos múltiples y diversificados que pueden nutrir el caudal de experiencias estéticas y expresivas de los niños y niñas al abrir las puertas a la ficción en sus diversas formas. Se apuesta a nutrir esa zona transicional entre el sujeto y el mundo a la que refiere Winnicott, ese territorio personal donde se integran el sentir, el hacer, el pensar e imaginar. “Ese territorio en constante conquista”, como lo denomina Graciela Montes, donde se funda lo imaginario: la zona propia del arte y el juego.
+                            Somos los docentes mediadores privilegiados en este proceso que vamos nutriendo los proyectos desde la multiplicidad de lenguajes, promoviendo una mirada que sin banalizar lo específico pueda gestar integraciones significativas. Los sistemas de números y letras que pueblan el universo socio-cultural se incorporan en el mismo sentido, desde múltiples vías de acceso, los niños van poniendo en juego estrategias que les permiten progresivamente apropiarse de sus códigos y reglas. Somos conscientes de la responsabilidad que nos cabe como Nivel Inicial en relación a la articulación de nuestra propuesta con el resto del sistema. Pero nos proponemos pensar la alfabetización en otros términos. Cuando Elliot Eisner (2002) define al alfabetismo como la capacidad de decodificar o codificar el significado trasmitido a través de cualquiera de las formas sociales, alude a un concepto de alfabetización ampliado. Eisner recupera a Nelson Goodman cuando dice: “hay tantos mundos como maneras de describirlos” (…) [por ello] el desarrollo de la sensibilidad humana y la oferta de programas que aborden los diversos medios de representar la experiencia – proposicional, literario, poético, visual, auditivo, coreográfico – deberían ser metas fundamentales de la educación. 
+                            El juego es un aliado permanente. Es jugando como los niños se apropian de los lenguajes, y si bien no todo lo que los chicos hacen en el Jardín es jugar (porque entendemos que cuando la extensión del concepto se hace tan abarcativa también se banaliza), sí defendemos el espacio del juego como un valor propio del nivel que hace, como plantea Patricia Sarlé a su alfabetización integral.
+                            Lo grupal
+                            El trazo, la imagen, el movimiento, el sonido, la palabra y aún el silencio de cada niño, se promueven, pero para ello se requiere a la vez, haber construido un lugar que los albergue. En el Jardín trabajamos con una perspectiva de construcción de grupos de aprendizaje, lo cual trasciende la mera cuestión de trabajar juntos o en equipos, uno sentado al lado del otro teniendo como meta la realización de una tarea. Aquí la búsqueda es construir un espacio de pertenencia, un espacio de identidad, en el cual establecer y fortalecer lazos, en el cual transitar desafíos y conflictos, en el cual poder confiar para andar y desandar el camino del sí mismo, del uno mismo entre otros. Los lenguajes artísticos funcionan como aliados a la hora de habilitar múltiples vías mediante las cuales lo propio, lo de cada cual, al expresarse, encuentra resonancias en los otros.
+                        </P>
+                    </article>
+                </div>
             </div>
         </section>  
     </main>
@@ -79,5 +119,7 @@
        </div>    
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
 </body>
 </html>

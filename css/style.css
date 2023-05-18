@@ -1,23 +1,171 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 body {
   background-image: url(../fotos/shutterstock_2236646405.jpg);
   background-size: cover;
 }
 
-nav {
-  background-color: aqua;
-  border: 1px solid black;
-  height: fit-content;
-  text-align: center;
+#contenedor-banner {
+  width: fit-content;
+  margin-top: 10px;
 }
-nav ul {
-  list-style-type: none;
-  text-align: center;
-  margin-bottom: 0;
+#contenedor-banner #banner-pio {
+  width: fit-content;
+  padding: 0 20px 0 20px;
 }
-nav ul li {
-  text-decoration: none;
+
+.seccion-espacio {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.seccion-espacio #patio {
+  background-color: #EAFF87;
+  flex-basis: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.seccion-espacio #patio img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.seccion-espacio {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.seccion-espacio #aula {
+  background-color: #C6FFE8;
+  flex-basis: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.seccion-espacio #aula img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .seccion-espacio {
+    flex-direction: column;
+  }
+}
+.cuentos-a, .cuentos-b, .cuentos-c {
+  justify-content: space-around;
+}
+
+.cuentos-a {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.cuentos-a .video-1,
+.cuentos-a .video-2 {
+  flex-basis: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.cuentos-a .video-1 .video-container,
+.cuentos-a .video-2 .video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+.cuentos-a .video-1 .video-container iframe,
+.cuentos-a .video-2 .video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.cuentos-b {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.cuentos-b .video-3, .cuentos-b .video-4 {
+  flex-basis: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.cuentos-b .video-3 .video-container, .cuentos-b .video-4 .video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+.cuentos-b .video-3 .video-container iframe, .cuentos-b .video-4 .video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.cuentos-c {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.cuentos-c .video-5,
+.cuentos-c .video-6 {
+  flex-basis: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.cuentos-c .video-5 .video-container,
+.cuentos-c .video-6 .video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+.cuentos-c .video-5 .video-container iframe,
+.cuentos-c .video-6 .video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .cuentos-a, .cuentos-b, .cuentos-c {
+    flex-direction: column;
+  }
+}
+p {
   font-size: 20px;
-  width: 100px;
+}
+
+.piso {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  background-image: url(../fotos/ilustracion\ camilaarte.png);
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+.piso1 {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  background-image: url(../fotos/azulejos.png);
+  background-repeat: repeat;
+  background-size: contain;
 }
 
 /*# sourceMappingURL=style.css.map */
