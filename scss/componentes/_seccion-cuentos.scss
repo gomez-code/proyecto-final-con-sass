@@ -1,13 +1,13 @@
 .cuentos-a, .cuentos-b, .cuentos-c{
     justify-content: space-around;
+
 }
 .cuentos-a {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
   
-    .video-1,
-    .video-2 {
+    .video-1,.video-2 {
       flex-basis: 50%;
       padding: 10px;
       box-sizing: border-box;
@@ -61,8 +61,7 @@
     flex-wrap: wrap;
     padding: 20px;
   
-    .video-5,
-    .video-6 {
+    .video-5, .video-6 {
       flex-basis: 50%;
       padding: 10px;
       box-sizing: border-box;
@@ -87,5 +86,14 @@
   @media screen and (max-width: 992px) {
     .cuentos-a, .cuentos-b, .cuentos-c {
       flex-direction: column;
+      align-content: space-around;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    iframe{
+      width: 100%;
+      align-content: center;
     }
   }

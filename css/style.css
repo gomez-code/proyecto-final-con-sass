@@ -68,21 +68,18 @@ body {
   flex-wrap: wrap;
   padding: 20px;
 }
-.cuentos-a .video-1,
-.cuentos-a .video-2 {
+.cuentos-a .video-1, .cuentos-a .video-2 {
   flex-basis: 50%;
   padding: 10px;
   box-sizing: border-box;
 }
-.cuentos-a .video-1 .video-container,
-.cuentos-a .video-2 .video-container {
+.cuentos-a .video-1 .video-container, .cuentos-a .video-2 .video-container {
   position: relative;
   width: 100%;
   padding-bottom: 56.25%;
   overflow: hidden;
 }
-.cuentos-a .video-1 .video-container iframe,
-.cuentos-a .video-2 .video-container iframe {
+.cuentos-a .video-1 .video-container iframe, .cuentos-a .video-2 .video-container iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -119,21 +116,18 @@ body {
   flex-wrap: wrap;
   padding: 20px;
 }
-.cuentos-c .video-5,
-.cuentos-c .video-6 {
+.cuentos-c .video-5, .cuentos-c .video-6 {
   flex-basis: 50%;
   padding: 10px;
   box-sizing: border-box;
 }
-.cuentos-c .video-5 .video-container,
-.cuentos-c .video-6 .video-container {
+.cuentos-c .video-5 .video-container, .cuentos-c .video-6 .video-container {
   position: relative;
   width: 100%;
   padding-bottom: 56.25%;
   overflow: hidden;
 }
-.cuentos-c .video-5 .video-container iframe,
-.cuentos-c .video-6 .video-container iframe {
+.cuentos-c .video-5 .video-container iframe, .cuentos-c .video-6 .video-container iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -144,6 +138,14 @@ body {
 @media screen and (max-width: 992px) {
   .cuentos-a, .cuentos-b, .cuentos-c {
     flex-direction: column;
+    align-content: space-around;
+    display: block;
+  }
+}
+@media screen and (max-width: 992px) {
+  iframe {
+    width: 100%;
+    align-content: center;
   }
 }
 p {
