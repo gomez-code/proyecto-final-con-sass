@@ -28,11 +28,8 @@
                 </div>
             </div>
         </div>
-    </header>
-        <!--(NAV con bootstrap)class="conteiner-fluid text-center sticky-top p-2" style="background-color: rgb(227, 224, 224); border: 2px solid lightblue;"-->
         <nav class="navbar sticky-top navbar-expand-lg" style="background-color: #e3faf4d8;">
             <div class="container-fluid">
-              <!--<a class="navbar-brand" href="#">MENU</a>-->
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -42,25 +39,22 @@
                     <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
                   </li>
                   <li class="nav-item  active pe-lg-4">
-                    <a class="nav-link" href="./espacio.html">ESPACIOS</a>
+                    <a class="nav-link active" href="./espacio.html">ESPACIOS</a>
                   </li>
                   <li class="nav-item pe-lg-4">
-                    <a class="nav-link" href="./historia.html">HISTORIA</a>
+                    <a class="nav-link active" href="./historia.html">HISTORIA</a>
                   </li>
                   <li class="nav-item pe-lg-4">
-                    <a class="nav-link" href="./multimedia.html">MULTIMEDIA</a>
+                    <a class="nav-link active" href="./multimedia.html">MULTIMEDIA</a>
                   </li>
                   <li class="nav-item pe-lg-4">
-                    <a class="nav-link" href="./talleres.html">CUENTOS</a>
+                    <a class="nav-link active" href="./talleres.html">CUENTOS</a>
                   </li>   
                 </ul>
-                <!--<form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>-->
               </div>
             </div>
-          </nav>    
+        </nav> 
+    </header>       
     <div class="piso1"> <!--imagen que divide el nav del main-->
     </div>
     <main>
@@ -101,6 +95,23 @@ La consideración del grupo de aprendizaje como tal modifica sustancialmente las
             <div class="col-sm-10 p-2" style="height: fit-content;"> <!--mapa-->
                 <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.5682275470913!2d-58.485754684769255!3d-34.64034998044998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc998e7baaf67%3A0xd0fa943eba8771d1!2sInstitucional%20Vocacional%20de%20Arte%20Manuel%20Jos%C3%A9%20de%20Labard%C3%A9n!5e0!3m2!1ses!2sar!4v1679666234328!5m2!1ses!2sar" width="100%" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+            <div class="contact-form-container">
+                <form class="contact-form">
+                  <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                  </div>
+                  <button type="submit">Enviar</button>
+                </form>
+              </div>
        </div>    
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
